@@ -1,7 +1,7 @@
 @ECHO OFF
 REM BFCPEOPTIONSTART
 REM Advanced BAT to EXE Converter www.BatToExeConverter.com
-REM BFCPEEXE=D:\SteamLibrary\steamapps\common\Black Desert Online\PatchedLauncher\BlackDesertLauncher.exe
+REM BFCPEEXE=B:\Development\Projects\Batch_BDOLaunchProxy\testBlackDesertLauncher.exe
 REM BFCPEICON=
 REM BFCPEICONINDEX=1
 REM BFCPEEMBEDDISPLAY=0
@@ -67,7 +67,7 @@ rem Launch Steam Version
 :Steam
 echo Launching Steam Black Desert Online!
 cd /d %STEAM_LOCATION%
-!STEAM_LAUNCH!
+%STEAM_LAUNCH% %*
 echo Keep me open for Steam process tracking.
 pause
 exit 0
